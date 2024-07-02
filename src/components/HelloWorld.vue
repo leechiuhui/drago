@@ -2,7 +2,11 @@
   <div class="hello">
     <h1><span class="fat-only">歡迎來到</span>
       playback劇場!!</h1>
-    <router-link class="ui huge green button" to="/about">請從流動塑像開始</router-link>
+    <div class="ui buttons">
+      <a class="ui large purple button" href="https://docs.google.com/document/d/17lp1gGyKwxt8gU64gMlOwPE-_p5lQeWaZ-8g8T7KsDU/edit?usp=sharing"
+        target="_blank" rel="noopener norefferer">小巴的Playback精華</a>
+      <router-link class="ui large green button" to="/about">從流動塑像開始</router-link>
+    </div>
   </div>
 </template>
 
