@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>
-        <span class = "fat-only">四元素
+        <span>四元素
         </span>
     </h1>
     <p v-if ="myF.d">
