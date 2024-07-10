@@ -1,2 +1,2 @@
 "use strict";(self["webpackChunkplayback"]=self["webpackChunkplayback"]||[]).push([[802],{802:function(n,s,e){e.r(s),e.d(s,{default:function(){return _}});var t=function(){var n=this,s=n._self._c;return s("div",{staticClass:"about"},[n._m(0),n.myF.d?s("p",[n._v(" "+n._s(n.myF.d)+" ")]):n._e(),n.myF.g?s("p",[n._v(" 呈現"+n._s(n.myF.g)+" ")]):n._e()])},a=[function(){var n=this,s=n._self._c;return s("h1",[s("span",[n._v("四元素 ")])])}],u={name:"ElemsElems",data(){return{myF:{n:"四元素",c:"四元素",d:"音樂、肢體、舞布、即興詩",g:"較深刻或抽象的主題"},forms:[{n:"四元素",c:"四元素",d:"音樂、肢體、舞布、即興詩",g:"較深刻或抽象的主題"}]}}},l=u,r=e(656),c=(0,r.A)(l,t,a,!1,null,null,null),_=c.exports}}]);
-//# sourceMappingURL=802.2a522546.js.map
+//# sourceMappingURL=802.716b6457.js.map
