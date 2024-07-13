@@ -1,22 +1,17 @@
-<template>
-  <div class="about">
-    <h1>
-        <span>自由呈現
-        </span>
-    </h1>
-    <p v-if ="myF.d">
-        {{myF.d}}
-    </p>
-    <p v-if ="myF.g">
-        呈現{{myF.g}}
-    </p>
-  </div>
+<template lang="pug">
+.about
+  .ui.segment.container
+    h1
+      span 自由呈現
+    p 「自由呈現」是一種可以呈現較重故事的形式。
+    p(v-if="myF.d") {{ myF.d }}
+
 </template>
 
 <script type="text/javascript">
     
 export default {
-  name: 'Free',
+  name: 'FreeStyle',
   data () {
     return {
       myF:  {n:'自由呈現', c:'自由呈現',
@@ -48,3 +43,14 @@ export default {
 }
 
 </script>
+
+<style scoped>
+.ui.list .item {
+  text-align: left;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+</style>
