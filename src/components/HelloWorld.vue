@@ -3,7 +3,11 @@
   h1.ui.header 
     span.fat-only 歡迎來到
     | 【從心出發】Playback劇場
-    .sub.header 每個人的生命，都是可歌可泣的故事
+    .sub.header.left.aligned 「每個人的生命，都是可歌可泣的故事。
+      br
+      | 可歌，是因為有力量；可泣，是因為有磨難。
+      br
+      | 聆聽自我，面對真實，專注當下，生命便會成長」-- 主辦人
   h2.ui.header 最新消息
   p.announce(v-for="(a, idx) in announces")
     a(v-if="a.h", :href="a.h", target="_blank", rel="noopener norefferer") {{a.date}}：{{ a.text }} 
@@ -55,6 +59,14 @@
     width: 140px;
     display: block;
     margin: 1em auto;
+  }
+
+  .left.aligned {
+    display: block;
+    text-align: left;
+    width: fit-content !important;
+    max-width: 420px;
+    margin: .6em auto !important;
   }
   
   </style>
