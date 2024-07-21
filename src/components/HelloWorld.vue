@@ -7,7 +7,7 @@
       br
       | 可歌，是因為有力量；可泣，是因為有磨難。
       br
-      | 聆聽自我，面對真實，專注當下，生命便會成長」-- 主辦人
+      | 聆聽自我，面對真實，專注當下，生命便會成長」-- 小巴
   h2.ui.header 最新消息
   p.announce(v-for="(a, idx) in announces")
     a(v-if="a.h", :href="a.h", target="_blank", rel="noopener norefferer") {{a.date}}：{{ a.text }} 
