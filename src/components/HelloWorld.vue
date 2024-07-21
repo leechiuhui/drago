@@ -16,7 +16,7 @@
   .ui.vertical.buttons
     a.ui.large.purple.button(href="https://docs.google.com/document/d/17lp1gGyKwxt8gU64gMlOwPE-_p5lQeWaZ-8g8T7KsDU/edit?usp=sharing", target="_blank", rel="noopener norefferer") Playback精華
     router-link.ui.large.pink.button(to="/about") 從流動塑像開始
-    a.ui.black.button(href="https://www.threads.net/@bestian_t", target="_blank", rel="noopener norefferer") Thread上更多文章 
+    a.ui.black.button(href="https://www.threads.net/@bestian_t", target="_blank", rel="noopener norefferer") Threads上新動態 
   //  a.ui.large.green.button(href="https://line.me/ti/g/6n2qAsibyY", target="_blank", rel="noopener norefferer") 【從心出發】Line群組
 
   // img.qr(src="../assets/heart_playback_qr.jpeg")
