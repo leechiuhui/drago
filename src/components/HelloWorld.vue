@@ -1,7 +1,7 @@
 <template lang="pug">
 .hello
   .ui.segment.container
-    h1.ui.header 
+    h2.ui.header 
       span.fat-only 歡迎來到
       | 【從心出發】Playback劇場
       .sub.header.left.aligned 「每個人的生命，都是可歌可泣的故事。
