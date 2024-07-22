@@ -1,23 +1,28 @@
 <template>
   <div id="app">
-    <div class="ui menu thin-only">
+    <div class="ui menu thin-only" id="thin-nav">
       <!-- <router-link class = "item" to="/">
         <i class="home icon"></i>
       </router-link> -->
       <router-link class = "item" to="/about">
         <i class="user icon"></i>
+        <span>流動塑像</span>
         </router-link>
       <router-link class = "item" to="/one_to_one">
         <i class="sync icon"></i>
+        <span>一對對</span>
         </router-link>
       <router-link class = "item" to="/pages">
         <i class="book icon"></i>
+        <span>一頁頁</span>
         </router-link>
       <router-link class = "item" to="/4elems">
         <i class="music icon"></i>
-        </router-link>
+        <span>四元素</span>
+      </router-link>
       <router-link class = "item" to="/free">
         <i class="birthday cake icon"></i>
+        <span>自由</span>
       </router-link>
     </div>
     <div class="ui labeled icon menu fat-only">
@@ -93,5 +98,9 @@ p {
   text-align: left;
   white-space: pre-line;
   padding: 0 1em;
+}
+
+#thin-nav .item {
+  padding: .4em !important;
 }
 </style>
