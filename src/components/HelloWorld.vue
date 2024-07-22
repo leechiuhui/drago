@@ -1,26 +1,34 @@
 <template lang="pug">
 .hello
-  h1.ui.header 
-    span.fat-only 歡迎來到
-    | 【從心出發】Playback劇場
-    .sub.header.left.aligned 「每個人的生命，都是可歌可泣的故事。
-      br
-      | 可歌，是因為有力量；可泣，是因為有磨難。
-      br
-      | 聆聽自我，面對真實，專注當下，生命便會成長」-- 小巴
-  h2.ui.header 最新消息
-  p.announce(v-for="(a, idx) in announces")
-    a(v-if="a.h", :href="a.h", target="_blank", rel="noopener norefferer") {{a.date}}：{{ a.text }} 
-    span(v-else-if="a.r", :to="a.r") {{a.date}}：{{ a.text }} 
-    span(v-else)  {{a.date}}：{{ a.text }} 
-  .ui.vertical.buttons
-    a.ui.large.purple.button(href="https://docs.google.com/document/d/17lp1gGyKwxt8gU64gMlOwPE-_p5lQeWaZ-8g8T7KsDU/edit?usp=sharing", target="_blank", rel="noopener norefferer") Playback精華
-    router-link.ui.large.pink.button(to="/about") 從流動塑像開始
-    a.ui.black.button(href="https://www.threads.net/@bestian_t", target="_blank", rel="noopener norefferer") Threads上新動態 
-  //  a.ui.large.green.button(href="https://line.me/ti/g/6n2qAsibyY", target="_blank", rel="noopener norefferer") 【從心出發】Line群組
+  .ui.segment.container
+    h1.ui.header 
+      span.fat-only 歡迎來到
+      | 【從心出發】Playback劇場
+      .sub.header.left.aligned 「每個人的生命，都是可歌可泣的故事。
+        br
+        | 可歌，是因為有力量；可泣，是因為有磨難。
+        br
+        | 聆聽自我，面對真實，專注當下，生命便會成長」-- 小巴
+    h2.ui.header Playback同理心回饋劇簡介：
+    p Playback同理心回饋劇(英文: Playback Theatre)是一種即興的互動式劇場，其演出並無預定的劇本，透過參與者口述的親身經驗，自願分享的心情和故事，在主持人的引導下，用即興有結構的表演形式，將故事呈現出來，並把演出回送給說故事的人和所有參與者。
+    br
+    p 這是一份相互分享的珍貴禮物，在一人一故事劇場的尊重與包容裡，共創安全的支持空間，能讓所有參與者充份體驗真實生命經驗交會的感動。❤️‍
+    h2.ui.header 最新消息
+    p.announce(v-for="(a, idx) in announces")
+      a(v-if="a.h", :href="a.h", target="_blank", rel="noopener norefferer") {{a.date}}：
+        b {{ a.text }} 
+      span(v-else-if="a.r", :to="a.r") {{a.date}}：
+        b {{ a.text }} 
+      span(v-else)  {{a.date}}：
+        b {{ a.text }} 
+    .ui.vertical.buttons
+      a.ui.large.purple.button(href="https://docs.google.com/document/d/17lp1gGyKwxt8gU64gMlOwPE-_p5lQeWaZ-8g8T7KsDU/edit?usp=sharing", target="_blank", rel="noopener norefferer") Playback精華
+      router-link.ui.large.pink.button(to="/about") 從流動塑像開始
+      a.ui.black.button(href="https://www.threads.net/@bestian_t", target="_blank", rel="noopener norefferer") Threads上新動態 
+    //  a.ui.large.green.button(href="https://line.me/ti/g/6n2qAsibyY", target="_blank", rel="noopener norefferer") 【從心出發】Line群組
 
-  // img.qr(src="../assets/heart_playback_qr.jpeg")
-  // audio#background-music(src="/Shiva.m4a", autoplay, loop)
+    // img.qr(src="../assets/heart_playback_qr.jpeg")
+    // audio#background-music(src="/Shiva.m4a", autoplay, loop)
   
   </template>
   
@@ -68,6 +76,21 @@
     width: fit-content !important;
     max-width: 420px;
     margin: .6em auto !important;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  p::first-letter {
+    font-size: 1.6em;
+  }
+
+
+  p.announce::first-letter {
+    font-size: 1em;
   }
   
   </style>
