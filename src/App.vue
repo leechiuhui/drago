@@ -50,6 +50,10 @@
         <i class="birthday cake icon"></i>
         自由呈現
       </router-link>
+      <router-link class = "item" to="/faq">
+        <i class="info icon"></i>
+        常見問題
+      </router-link>
     </div>
     <router-view/>
   </div>

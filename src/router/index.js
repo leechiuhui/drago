@@ -34,6 +34,11 @@ Vue.use(VueRouter)
     path: '/free',
     name: 'Free',
     component: () => import('../views/Free.vue')
+  },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    component: () => import('../views/FAQ.vue')
   }
 ]
 
