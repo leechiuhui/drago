@@ -1,63 +1,81 @@
-<template>
-  <div id="app">
-    <div class="ui menu thin-only" id="thin-nav">
-      <!-- <router-link class = "item" to="/">
-        <i class="home icon"></i>
-      </router-link> -->
-      <router-link class = "item" to="/about">
-        <i class="user icon"></i>
-        <span>流動塑像</span>
-        </router-link>
-      <router-link class = "item" to="/one_to_one">
-        <i class="sync icon"></i>
-        <span>一對對</span>
-        </router-link>
-      <router-link class = "item" to="/pages">
-        <i class="book icon"></i>
-        <span>一頁頁</span>
-        </router-link>
-      <router-link class = "item" to="/4elems">
-        <i class="music icon"></i>
-        <span>四元素</span>
-      </router-link>
-      <router-link class = "item" to="/free">
-        <i class="birthday cake icon"></i>
-        <span>自由</span>
-      </router-link>
-    </div>
-    <div class="ui labeled icon menu fat-only">
-      <router-link class = "item" to="/">
-        <i class="home icon"></i>
-        首頁
-      </router-link>
-      <router-link class = "item" to="/about">
-        <i class="user icon"></i>
-        流動塑像
-      </router-link>
-      <router-link class = "item" to="/one_to_one">
-        <i class="sync icon"></i>
-        一對對
-      </router-link>
-      <router-link class = "item" to="/pages">
-        <i class="book icon"></i>
-        一頁頁
-      </router-link>
-      <router-link class = "item" to="/4elems">
-        <i class="music icon"></i>
-        四元素
-      </router-link>
-      <router-link class = "item" to="/free">
-        <i class="birthday cake icon"></i>
-        自由呈現
-      </router-link>
-      <router-link class = "item" to="/faq">
-        <i class="info icon"></i>
-        常見問題
-      </router-link>
-    </div>
-    <router-view/>
-  </div>
+<template lang="pug">
+#app
+  .ui.menu.thin-only#thin-nav
+    button.no-border.ui.item(@click="toggleSidebar")
+      i.icon.bars
+    router-link(class="item" to="/")
+      i.home.icon
+    router-link(class="item" to="/faq")
+      i.info.icon
+      | 常見問題
+    router-link(class="item" to="/about")
+      i.user.icon
+      | 流動塑像
+  .ui.labeled.icon.menu.fat-only
+    router-link(class="item" to="/")
+      i.home.icon
+      | 首頁
+    router-link(class="item" to="/about")
+      i.user.icon
+      | 流動塑像
+    router-link(class="item" to="/one_to_one")
+      i.sync.icon
+      | 一對對
+    router-link(class="item" to="/pages")
+      i.book.icon
+      | 一頁頁
+    router-link(class="item" to="/4elems")
+      i.music.icon
+      | 四元素
+    router-link(class="item" to="/free")
+      i.birthday.cake.icon
+      | 自由呈現
+    router-link(class="item" to="/faq")
+      i.info.icon
+      | 常見問題
+  .ui.sidebar.vertical.menu#side-menu(:class="{'hidden': !sidebarVisible}")
+    router-link.item(to='/', exact='', name="home")
+      i.home.icon
+      | 首頁
+    router-link(class="item" to="/faq")
+      i.info.icon
+      | 常見問題
+    router-link(class="item" to="/about")
+      i.user.icon
+      span 流動塑像
+    router-link(class="item" to="/one_to_one")
+      i.sync.icon
+      span 一對對
+    router-link(class="item" to="/pages")
+      i.book.icon
+      span 一頁頁
+    router-link(class="item" to="/4elems")
+      i.music.icon
+      span 四元素
+    router-link(class="item" to="/free")
+      i.birthday.cake.icon
+      span 自由呈現
+  .ui.sidebar.bg(:class="{'hidden': !sidebarVisible}", @click="toggleSidebar")
+  router-view
 </template>
+
+<script>
+
+export default {
+  name: 'PlayBack',
+  data() {
+    return {
+      sidebarVisible: false
+    }
+  },
+  methods: {
+    toggleSidebar() {
+      this.sidebarVisible = !this.sidebarVisible
+    }
+  }
+}
+
+</script>
 
 <style lang="scss">
 
@@ -65,8 +83,11 @@
 @import "./sass/animation.scss";
 
 .ui.menu {
-  margin: 0 !important;
-  width: 100vw;
+  margin-top: 0 !important;
+}
+
+.no-border {
+  border: none;
 }
 
 @media (max-width: 600px) {
@@ -104,7 +125,32 @@ p {
   padding: 0 1em;
 }
 
-#thin-nav .item {
-  padding: .4em !important;
+/* CSS */
+.ui.sidebar {
+  transition: transform .3s ease, opacity .3s ease, visibility .3s ease !important;
+  z-index: 1000;
+  position: fixed;
+  top: 0 !important;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 1;
+  visibility: visible !important;
 }
+
+.ui.sidebar.bg {
+  z-index: 2 !important; /* 設定一個低值 */
+  background-color: rgba(180, 180, 180, 0.62); /* 確保有背景色 */
+  width: 100vw;
+  cursor: pointer;
+}
+
+.ui.sidebar.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0s linear !important;
+  transform: translateX(-100%); /* 隱藏時向左滑動 */
+}
+
 </style>

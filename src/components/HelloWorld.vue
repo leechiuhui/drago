@@ -9,10 +9,6 @@
         | 可歌，是因為有力量；可泣，是因為有磨難。
         br
         | 聆聽自我，面對真實，專注當下，生命便會成長」-- 小巴
-    h2.ui.header Playback同理心回饋劇簡介：
-    p Playback同理心回饋劇(英文: Playback Theatre)是一種即興的互動式劇場，其演出並無預定的劇本，透過參與者口述的親身經驗，自願分享的心情和故事，在主持人的引導下，用即興有結構的表演形式，將故事呈現出來，並把演出回送給說故事的人和所有參與者。
-    br
-    p 這是一份相互分享的珍貴禮物，在一人一故事劇場的尊重與包容裡，共創安全的支持空間，能讓所有參與者充份體驗真實生命經驗交會的感動。❤️‍
     h2.ui.header 最新消息
     p.announce(v-for="(a, idx) in announces")
       a(v-if="a.h", :href="a.h", target="_blank", rel="noopener norefferer") {{a.date}}：
@@ -26,6 +22,13 @@
       router-link.ui.large.pink.button(to="/about") 從流動塑像開始
       router-link.ui.large.blue.button(to="/faq") 常見問題FAQ
       a.ui.black.button(href="https://www.threads.net/@bestian_t", target="_blank", rel="noopener norefferer") @Threads上新動態 
+    
+    h2.ui.header Playback同理心回饋劇簡介：
+    p Playback同理心回饋劇(英文: Playback Theatre)是一種即興的互動式劇場，其演出並無預定的劇本，透過參與者口述的親身經驗，自願分享的心情和故事，在主持人的引導下，用即興有結構的表演形式，將故事呈現出來，並把演出回送給說故事的人和所有參與者。
+    br
+    p 這是一份相互分享的珍貴禮物，在一人一故事劇場的尊重與包容裡，共創安全的支持空間，能讓所有參與者充份體驗真實生命經驗交會的感動。❤️‍
+   
+
     //  a.ui.large.green.button(href="https://line.me/ti/g/6n2qAsibyY", target="_blank", rel="noopener norefferer") 【從心出發】Line群組
 
     // img.qr(src="../assets/heart_playback_qr.jpeg")
