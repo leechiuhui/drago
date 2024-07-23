@@ -12,24 +12,35 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="【從心出發】Playback劇場" />
     <meta property="og:description" content="以動畫的方式呈現各種playback劇場的演出形式" />
-    <meta property="og:type" content="webstite" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://3dw.github.io/playback/" />
     <meta property="og:image" content="https://3dw.github.io/playback/og-image.jpg" />
     <title>【從心出發】Playback劇場</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.min.css" integrity="sha512-OD0ScwZAE5PCg4nATXnm8pdWi0Uk0Pp2XFsFz1xbZ7xcXvapzjvcxxHPeTZKfMjvlwwl4sGOvgJghWF2GRZZDw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css" integrity="sha512-8Tb+T7SKUFQWOPIQCaLDWWe1K/SY8hvHl7brOH8Nz5z1VT8fnf8B+9neoUzmFY3OzkWMMs3OjrwZALgB1oXFBg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/menu.min.css" integrity="sha512-ox96Q1iqhM5TvdY4gVbz6FXoDwsR/Q8jq15kWReQNefC+uUGCv+pkMbLOtr176K3+bfrQQv6gTDAvhL1PUw2YQ==" crossorigin="anonymous" />
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWBX48QTJP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-DWBX48QTJP');
-    </script>
+      // 初始設定，設定同意模式
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied'
+      });
 
+      // 根據用戶同意狀態更新同意模式
+      function updateConsent(ad_consent, analytics_consent) {
+        gtag('consent', 'update', {
+          'ad_storage': ad_consent,
+          'analytics_storage': analytics_consent
+        });
+      }
+
+      // 示例：假設用戶同意了廣告和分析
+      // updateConsent('granted', 'granted');
+    </script>
   </head>
   <body>
     <noscript>
