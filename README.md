@@ -12,6 +12,9 @@ Playback同理心回饋劇(英文: Playback Theatre)是一種即興的互動式�
 
 這是一份相互分享的珍貴禮物，在一人一故事劇場的尊重與包容裡，共創安全的支持空間，能讓所有參與者充份體驗真實生命經驗交會的感動。
 
+## Playback同理心回饋劇詳細介紹：
+
+請看[Playback精華](https://docs.google.com/document/d/17lp1gGyKwxt8gU64gMlOwPE-_p5lQeWaZ-8g8T7KsDU/edit#heading=h.32ourccsnq6m)
 
 
 ## Project setup
