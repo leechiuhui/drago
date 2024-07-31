@@ -21,7 +21,7 @@
       a.ui.large.purple.button(href="https://docs.google.com/document/d/17lp1gGyKwxt8gU64gMlOwPE-_p5lQeWaZ-8g8T7KsDU/edit?usp=sharing", target="_blank", rel="noopener norefferer", @click="trackEvent('external_link', 'Google Doc')") Playback精華
       router-link.ui.large.pink.button(to="/about", @click="trackEvent('internal_link', '/about')") 從流動塑像開始
       router-link.ui.large.blue.button(to="/faq", @click="trackEvent('internal_link', '/faq')") 常見問題FAQ
-      a.ui.black.button(href="https://www.threads.net/@bestian_t", target="_blank", rel="noopener norefferer", @click="trackEvent('external_link', 'Threads')") @Threads上新動態 
+      // a.ui.black.button(href="https://www.threads.net/@bestian_t", target="_blank", rel="noopener norefferer", @click="trackEvent('external_link', 'Threads')") @Threads上新動態 
     
     h2.ui.header Playback同理心回饋劇簡介：
     p Playback同理心回饋劇(英文: Playback Theatre)是一種即興的互動式劇場，其演出並無預定的劇本，透過參與者口述的親身經驗，自願分享的心情和故事，在主持人的引導下，用即興有結構的表演形式，將故事呈現出來，並把演出回送給說故事的人和所有參與者。
