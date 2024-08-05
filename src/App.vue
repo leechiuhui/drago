@@ -12,6 +12,9 @@
       i.user.icon
       | 流動塑像
   .ui.labeled.icon.menu.fat-only
+    button.no-border.ui.item(@click="toggleSidebar")
+      i.icon.bars
+      | 側欄
     router-link(class="item" to="/")
       i.home.icon
       | 首頁

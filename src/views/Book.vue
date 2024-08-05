@@ -19,7 +19,7 @@ export default {
 <style scoped>
   p {
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     max-width: 620px;
     margin: .6em auto;
     color: rgb(64, 3, 206);
