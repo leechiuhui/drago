@@ -55,6 +55,9 @@
     router-link(class="item" to="/free")
       i.birthday.cake.icon
       span 自由呈現
+    router-link(class="item" to="/book")
+      i.book.icon
+      span 相關書籍
   .ui.sidebar.bg(:class="{'hidden': !sidebarVisible}", @click="toggleSidebar")
   router-view
 </template>
