@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style scoped>
+
+  img {
+    max-width: 88%;  
+  }
   p {
     font-size: 18px;
     text-align: center;
