@@ -5,6 +5,9 @@
       i.icon.bars
     router-link(class="item" to="/")
       i.home.icon
+    router-link(class="item" to="/courses")
+      i.users.icon
+      | 課程
     router-link(class="item" to="/faq")
       i.info.icon
       | 常見問題
@@ -18,28 +21,22 @@
     router-link(class="item" to="/")
       i.home.icon
       | 首頁
-    router-link(class="item" to="/about")
-      i.user.icon
-      | 流動塑像
-    router-link(class="item" to="/one_to_one")
-      i.sync.icon
-      | 一對對
-    router-link(class="item" to="/pages")
-      i.book.icon
-      | 一頁頁
-    router-link(class="item" to="/4elems")
-      i.music.icon
-      | 四元素
-    router-link(class="item" to="/free")
-      i.birthday.cake.icon
-      | 自由呈現
+    router-link(class="item" to="/courses")
+      i.users.icon
+      | 課程
     router-link(class="item" to="/faq")
       i.info.icon
       | 常見問題
+    router-link(class="item" to="/about")
+      i.user.icon
+      | 流動塑像
   .ui.sidebar.vertical.menu#side-menu(:class="{'hidden': !sidebarVisible}")
     router-link.item(to='/', exact='', name="home")
       i.home.icon
       | 首頁
+    router-link(class="item" to="/courses")
+      i.users.icon
+      | 課程
     router-link(class="item" to="/faq")
       i.info.icon
       | 常見問題
