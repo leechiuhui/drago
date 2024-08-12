@@ -5,17 +5,22 @@
     .ui.card
       h4.ui.header Playback初階體驗工作坊
         .sub.header 同理心回饋劇初探
+      img.card-img(src="/img/lev1.jpg")
+      p 八月「從心出發」已截止報名，進行中。
       p 九月「從心出發」籌備中...
     .ui.card
       h4.ui.header Playback二階體驗工作坊
         .sub.header 五種基本形式
+      img.card-img(src="/img/lev2.jpg")
       p 九月「心聆神會」籌備中...
     .ui.card
       h4.ui.header Playback三階體驗工作坊
         .sub.header 主持人技巧
+      img.card-img(src="/img/lev3.jpg")
       p 尚未開課...
     .ui.card
       h4.ui.header 長線成長團體
+      img.card-img(src="/img/group.jpg")
       p 尚未開課...
 
 </template>
