@@ -20,6 +20,7 @@
       p 尚未開課...
     .ui.card
       h4.ui.header 長線成長團體
+        .sub.header 穩定的持續練習節奏
       img.card-img(src="/img/group.jpg")
       p 尚未開課...
 
