@@ -1,7 +1,7 @@
 <template lang="pug">
 .courses
   h1.ui.header 課程
-  .ui.four.doubling.cards.container
+  .ui.four.doubling.stackable.cards.container
     .ui.card
       h4.ui.header Playback初階體驗工作坊
         .sub.header 同理心回饋劇初探
@@ -36,6 +36,10 @@ export default {
 <style scoped>
 .ui.card {
   padding: 1em;
+}
+
+img.card-img {
+  max-width: 100%;
 }
 
 p {

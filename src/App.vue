@@ -11,9 +11,6 @@
     router-link(class="item" to="/faq")
       i.info.icon
       | 常見問題
-    router-link(class="item" to="/about")
-      i.user.icon
-      | 流動塑像
   .ui.labeled.icon.menu.fat-only
     button.no-border.ui.item(@click="toggleSidebar")
       i.icon.bars
