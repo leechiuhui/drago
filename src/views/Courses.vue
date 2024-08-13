@@ -5,9 +5,11 @@
     .ui.card
       h4.ui.header Playback初階體驗工作坊
         .sub.header 同理心回饋劇初探
-      img.card-img(src="/img/lev1.jpg")
-      p 八月「從心出發」已截止報名，進行中。
-      p 九月「從心出發」籌備中...
+      router-link(to="/lev1")
+        img.card-img(src="/img/lev1.jpg")
+      // p 八月父親節「從心出發」已截止報名，進行中。
+      p 九月中秋節「從心出發」開放報名中，
+        router-link(to="/lev1") 詳見此
     .ui.card
       h4.ui.header Playback二階體驗工作坊
         .sub.header 五種基本形式
@@ -29,7 +31,7 @@
 <script>
 
 export default {
-  name: 'Faq',
+  name: 'CourSes',
 }
 </script>
 
