@@ -1,10 +1,16 @@
 <template lang="pug">
 .courses
   h1.ui.header 課程
-    .sub.header 我想像中的Playback同理心回饋劇的練習，分為三個階段：
+    .sub.header.text-left
+      br
+      | 我想像中的Playback同理心回饋劇練習，分為三個階段：
+      br
       | 一階是入門體驗同理心和即興肢體表達；
+      br
       | 二階是學習五種基本的Playback形式；
-      | 三階是主持人技巧與態度
+      br
+      | 三階是主持人技巧與態度。
+      br
   .ui.four.doubling.stackable.cards.container
     .ui.card
       h4.ui.header Playback初階體驗工作坊
@@ -46,6 +52,13 @@ export default {
 
 img.card-img {
   max-width: 100%;
+}
+
+.text-left {
+  display: block;
+  text-align: left;
+  width: fit-content !important;
+  margin: 0 auto !important;
 }
 
 p {
