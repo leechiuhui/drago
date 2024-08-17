@@ -22,9 +22,9 @@
         router-link(to="/lev1") 詳見此
     .ui.card
       h4.ui.header Playback二階體驗工作坊
-        .sub.header 五種基本形式
+        .sub.header 四種基本元素、五個基本形式
       img.card-img(src="/img/lev2.jpg")
-      p 九月「心聆神會」籌備中...
+      p 九月「心領神會」籌備中，有興趣的朋友請先空出09/28, 09/29上午時段
     .ui.card
       h4.ui.header Playback三階體驗工作坊
         .sub.header 主持人技巧
