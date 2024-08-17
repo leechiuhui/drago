@@ -1,7 +1,7 @@
 <template lang="pug">
 .courses
   h1.ui.header 課程
-    .sub.header.text-left
+    .sub.header.text-left.padded
       br
       | 我想像中的Playback同理心回饋劇練習，分為三個階段：
       br
@@ -24,7 +24,7 @@
       h4.ui.header Playback二階體驗工作坊
         .sub.header 四種基本元素、五個基本形式
       img.card-img(src="/img/lev2.jpg")
-      p 九月「心領神會」籌備中，有興趣的朋友請先空出09/28, 09/29上午時段
+      p 九月教師節「心領神會」籌備中，有興趣的朋友請先空出09/28, 09/29上午時段
     .ui.card
       h4.ui.header Playback三階體驗工作坊
         .sub.header 主持人技巧
@@ -59,6 +59,10 @@ img.card-img {
   text-align: left;
   width: fit-content !important;
   margin: 0 auto !important;
+}
+
+.padded {
+  padding: 1em !important;
 }
 
 p {
