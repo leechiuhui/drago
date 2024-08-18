@@ -20,11 +20,13 @@
       // p 八月父親節「從心出發」已截止報名，進行中。
       p 九月中秋節「從心出發」開放報名中，
         router-link(to="/lev1") 詳見此
+      p.gray 十月華山文創場「從心出發」籌備中，有興趣的朋友請先空出10/26(六), 10/27(日)上午時段
+      p.gray 十一月中壢夢田場「從心出發」籌備中，有興趣的朋友請先空出11/23(六), 11/24(日)上午時段
     .ui.card
       h4.ui.header Playback二階體驗工作坊
         .sub.header 四種基本元素、五個基本形式
       img.card-img(src="/img/lev2.jpg")
-      p 九月教師節「心領神會」籌備中，有興趣的朋友請先空出09/28, 09/29上午時段
+      p 九月教師節「心領神會」籌備中，有興趣的朋友請先空出09/28(六), 09/29(日)上午時段
     .ui.card
       h4.ui.header Playback三階體驗工作坊
         .sub.header 主持人技巧
@@ -34,7 +36,7 @@
       h4.ui.header 長線成長團體
         .sub.header 穩定的持續練習節奏
       img.card-img(src="/img/group.jpg")
-      p 尚未開課...
+      p 籌備中...
 
 </template>
 
@@ -71,5 +73,9 @@ p {
   max-width: 620px;
   margin: .6em auto;
   color: rgb(64, 3, 206);
+}
+
+p.gray {
+  color: #999;
 }
 </style>
