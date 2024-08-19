@@ -5,12 +5,15 @@
       i.icon.bars
     router-link(class="item" to="/")
       i.home.icon
+    router-link.item(to="/core")
+      i.suitcase.icon
+      | 精華
     router-link(class="item" to="/courses")
       i.users.icon
       | 課程
     router-link(class="item" to="/faq")
       i.info.icon
-      | 常見問題
+      | 問題
   .ui.labeled.icon.menu.fat-only
     button.no-border.ui.item(@click="toggleSidebar")
       i.icon.bars
@@ -18,6 +21,9 @@
     router-link(class="item" to="/")
       i.home.icon
       | 首頁
+    router-link.item(to="/core")
+      i.suitcase.icon
+      | 精華
     router-link(class="item" to="/courses")
       i.users.icon
       | 課程
@@ -31,6 +37,9 @@
     router-link.item(to='/', exact='', name="home")
       i.home.icon
       | 首頁
+    router-link.item(to="/core")
+      i.suitcase.icon
+      | 精華
     router-link(class="item" to="/courses")
       i.users.icon
       | 課程
