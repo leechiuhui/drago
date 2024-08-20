@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="playback形式備忘"/>
+    <HelloWorld msg="Drago累積"/>
   </div>
 </template>
 
