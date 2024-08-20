@@ -2,10 +2,18 @@
 .faq
   .ui.segment.container
     h2.ui.header 相關書籍
-    a(href="https://www.psy.com.tw/ec99/ushop20128/goodsdescr.asp?category_id=72&parent_id=87&prod_id=41505",
+    a(href="https://www.books.com.tw/products/0010819668?srsltid=AfmBOoraRMb1c1ydZBU9YLIiXWaJmSZzLvV9PU-ccdOYC95L_2Bz8GCH",
       target="_blank", rel="noopener noreferrer")
-      img(src="https://www.psy.com.tw/ecmas0128/Store/bImages/41505.jpg")
-      p 即興真實人生-一人一故事劇場中的個人故事
+      img(src="/img/1book.webp")
+      p 還我本來面目
+    a(href="https://www.books.com.tw/products/0010881282?loc=P_br_r0vq68ygz_D_2aabd0_B_3",
+      target="_blank", rel="noopener noreferrer")
+      img(src="/img/2book.webp")
+      p 我在・生生世世
+    a(href="https://www.books.com.tw/products/0010875911?loc=P_br_r0vq68ygz_D_2aabd0_B_3",
+      target="_blank", rel="noopener noreferrer")
+      img(src="/img/3book.webp")
+      p 叩問生死
 
 </template>
 

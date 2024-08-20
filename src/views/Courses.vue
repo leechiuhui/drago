@@ -3,40 +3,40 @@
   h1.ui.header 課程
     .sub.header.text-left.padded
       br
-      | 我想像中的Playback同理心回饋劇練習，分為三個階段：
+      | 我的人生從2008年33歲開始，進入了一個新的階段，因為我接觸了圓桌教育基金會《改變的力量》課程
       br
-      | 一階是入門體驗同理心和即興肢體表達；
+      | 2010年買到一本書《還我本來面目》
       br
-      | 二階是學習五種基本的Playback形式；
+      | 
       br
-      | 三階是主持人技巧與態度。
+      | 
       br
   .ui.four.doubling.stackable.cards.container
     .ui.card
-      h4.ui.header Playback初階體驗工作坊
-        .sub.header 同理心回饋劇初探
+      h4.ui.header 圓桌教育基金會課程
+        .sub.header 《改變的力量》
       router-link(to="/lev1")
-        img.card-img(src="/img/lev1.jpg")
+        img.card-img(src="/img/logo.jpg")
       // p 八月父親節「從心出發」已截止報名，進行中。
-      p 九月中秋節「從心出發」開放報名中(8/26截止)，
-        router-link(to="/lev1") 詳見此
-      p.gray 十月華山文創場「從心出發」籌備中，有興趣的朋友請先空出10/26(六), 10/27(日)上午時段
-      p.gray 十一月中壢夢田場「從心出發」籌備中，有興趣的朋友請先空出11/09(六), 11/10(日)上午時段
+      //- p 九月中秋節「從心出發」開放報名中(8/26截止)，
+      //-   router-link(to="/lev1") 詳見此
+      //- p.gray 十月華山文創場「從心出發」籌備中，有興趣的朋友請先空出10/26(六), 10/27(日)上午時段
+      //- p.gray 十一月中壢夢田場「從心出發」籌備中，有興趣的朋友請先空出11/09(六), 11/10(日)上午時段
     .ui.card
-      h4.ui.header Playback二階體驗工作坊
-        .sub.header 四種基本元素、五個基本形式
-      img.card-img(src="/img/lev2.jpg")
-      p 九月教師節「心領神會」籌備中，有興趣的朋友請先空出09/28(六), 09/29(日)上午時段
+      h4.ui.header 至青宇宙學校
+        .sub.header 我在・生生世世
+      img.card-img(src="/img/logo.jpg")
+      //- p 九月教師節「心領神會」籌備中，有興趣的朋友請先空出09/28(六), 09/29(日)上午時段
     .ui.card
-      h4.ui.header Playback三階體驗工作坊
-        .sub.header 主持人技巧
-      img.card-img(src="/img/lev3.jpg")
-      p 尚未開課...
+      h4.ui.header 
+        .sub.header 
+      img.card-img(src="/img/logo.jpg")
+      p 尚在思考...
     .ui.card
-      h4.ui.header 長線成長團體
-        .sub.header 穩定的持續練習節奏
-      img.card-img(src="/img/group.jpg")
-      p 每月一次，需先參與過初階課程
+      h4.ui.header 
+        .sub.header 
+      img.card-img(src="/img/logo.jpg")
+      p 尚在思考
 
 </template>
 

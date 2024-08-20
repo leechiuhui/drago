@@ -1,13 +1,14 @@
 <template lang="pug">
 .courses
-  h1.ui.header Playback精華
-    .sub.header 深入瞭解Playback同理心回饋劇
+  h1.ui.header Drago功過格
+    .sub.header 必須苦其筋骨餓其體膚，空乏其身，行拂亂其所為，所以動心忍性，以究其所不能。
   .ui.segmant.container
     iframe(width="100%", 
       height="600px",
       frameborder="0",
       allowfullscreen,
-      :src="'https://docs.google.com/document/d/' + YourDocumentID + '/preview'")
+      :src=" 'https://github.com/leechiuhui/Thoughts_on_Emotion_Control/issues '")
+
 
 </template>
 

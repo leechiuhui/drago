@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>
-        <span class = "fat-only">流動塑像
+        <span class = "fat-only">Drago累積
         </span>
         <span v-if = "myF.n">{{myF.n}}</span>
     </h1>
@@ -22,26 +22,26 @@
 
 <script type="text/javascript">
     
-export default {
-  name: 'Statues',
-  data () {
-    return {
-      myF:  {n: '起點', css: ''},
-      forms:  [
-            {n: '起點', css: ''},
-            {n:'定格流動塑像',
-             c:'流動塑像', 
-             css:'shiftingStatue',
-             d:'每人出來講同樣短句三次，之後定格，換下一位出來。\n全部定格後，送給說故事的人。',
-             g:'心情或小故事'},
-            {n:'持續流動塑像', c:'流動塑像',
-             css:'rollingStatue',
-              d:'每人出來講同樣短句三次，之後轉小聲、持續動作，換下一位出來。\n最後一位講完再一起定格，送給說故事的人。',
-             g:'心情或小故事'}
-        ]
-    }
-  }
-}
+// export default {
+//   name: 'Statues',
+//   data () {
+//     return {
+//       myF:  {n: '起點', css: ''},
+//       forms:  [
+//             {n: '起點', css: ''},
+//             {n:'定格流動塑像',
+//              c:'流動塑像', 
+//              css:'shiftingStatue',
+//              d:'每人出來講同樣短句三次，之後定格，換下一位出來。\n全部定格後，送給說故事的人。',
+//              g:'心情或小故事'},
+//             {n:'持續流動塑像', c:'流動塑像',
+//              css:'rollingStatue',
+//               d:'每人出來講同樣短句三次，之後轉小聲、持續動作，換下一位出來。\n最後一位講完再一起定格，送給說故事的人。',
+//              g:'心情或小故事'}
+//         ]
+//     }
+//   }
+// }
 
 </script>
 
