@@ -36,7 +36,7 @@
       h4.ui.header 長線成長團體
         .sub.header 穩定的持續練習節奏
       img.card-img(src="/img/group.jpg")
-      p 籌備中...
+      p 每月一次，需先參與過初階課程
 
 </template>
 
