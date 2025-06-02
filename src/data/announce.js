@@ -3,6 +3,10 @@ export const announces = [
     //     text: 'https://blog.drago.tw 部落格開張，去年一開始我原本就是想要部落格型態的，終於又從Bestian老師那邊發現可以怎麼做部落格，謝謝Bestian老師',
     //     h: 'https://blog.drago.tw'
     // },
+    {date: '2025-06-01',
+        text: 'https://blog.drago.tw 網站開始日。',
+        // h: 'https://forms.gle/dCEW3m3a1pJfj5kP7'
+    },
     {date: '2024-08-20',
         text: 'https://drago.tw 網站開站日，這裡將持續累積完整真實的自己。',
         // h: 'https://forms.gle/dCEW3m3a1pJfj5kP7'
