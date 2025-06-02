@@ -1,0 +1,46 @@
+name: Continuous Integration
+
+on:
+  # 所有分支的推送都會觸發 CI
+  push:
+    branches: [ "**" ]
+  
+  # 所有對任何分支的 pull request 都會觸發 CI
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [16, 18, 20]
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+        
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+      
+    - name: Lint
+      run: yarn lint
+      
+    - name: Build
+      run: yarn build
+      
+    - name: Check build artifacts
+      run: |
+        if [ ! -d "dist" ]; then
+          echo "Build failed: dist directory not found"
+          exit 1
+        fi
+        echo "Build successful: dist directory exists"
+        ls -la dist/ 

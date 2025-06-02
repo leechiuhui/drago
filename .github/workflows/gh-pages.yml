@@ -1,0 +1,41 @@
+name: Build and Deploy with gh-pages
+
+on:
+  # 當推送到 main 分支時觸發
+  push:
+    branches: [ main ]
+  
+  # 允許手動觸發
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        # gh-pages 需要完整的 git 歷史記錄
+        fetch-depth: 0
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'yarn'
+        
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+      
+    - name: Lint
+      run: yarn lint
+      
+    - name: Build and Deploy
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        yarn deploy
+      env:
+        # 使用 GitHub token 進行認證
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
