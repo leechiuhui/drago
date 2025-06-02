@@ -4,7 +4,7 @@ export const announces = [
     //     h: 'https://blog.drago.tw'
     // },
     {date: '2025-06-01',
-        text: 'https://blog.drago.tw 網站開始日。',
+        text: 'https://blog.drago.tw 部落格開始日。',
         // h: 'https://forms.gle/dCEW3m3a1pJfj5kP7'
     },
     {date: '2024-08-20',
