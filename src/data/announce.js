@@ -5,7 +5,7 @@ export const announces = [
     // },
     {date: '2025-06-01',
         text: 'https://blog.drago.tw 部落格開始日。',
-        // h: 'https://forms.gle/dCEW3m3a1pJfj5kP7'
+        h: 'https://blog.drago.tw'
     },
     {date: '2024-08-20',
         text: 'https://drago.tw 網站開站日，這裡將持續累積完整真實的自己。',
